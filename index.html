@@ -17,9 +17,9 @@
 
   <script>
     const params = new URLSearchParams(window.location.search);
-    document.getElementById("nombre").textContent = params.get("NOMBRE") || "NADA";
-    document.getElementById("correo").textContent = params.get("EMAIL") || "NADA";
-    document.getElementById("actualizado").textContent = params.get("ACTUALIZADO EL") || "NADA";
+    document.getElementById("nombre").textContent = params.get("NOMBRE");
+    document.getElementById("correo").textContent = params.get("EMAIL");
+    document.getElementById("actualizado").textContent = params.get("ACTUALIZADO EL");
   </script>
 </body>
 
