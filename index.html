@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <title>appsheet api</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+  <h1>Visualización de Datos</h1>
+  <div>
+    <p>Nombre: <span id="nombre"></span></p>
+    <p>Edad: <span id="correo"></span></p>
+    <p>Otro: <span id="actualizado"></span></p>
+  </div>
+
+  <script>
+    const params = new URLSearchParams(window.location.search);
+    document.getElementById("nombre").textContent = params.get("NOMBRE") || "NADA";
+    document.getElementById("correo").textContent = params.get("EMAIL") || "NADA";
+    document.getElementById("actualizado").textContent = params.get("ACTUALIZADO EL") || "NADA";
+  </script>
+</body>
+
+</html>
