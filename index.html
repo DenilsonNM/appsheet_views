@@ -36,6 +36,9 @@
 
     <script>
       const params = new URLSearchParams(window.location.search);
+
+      const imagen = params.get("imagen");
+
       document.getElementById("miFoto").src = imagen;
       document.getElementById("imagen").textContent = params.get("imagen");
       document.getElementById("nombre").textContent = params.get("nombre");
