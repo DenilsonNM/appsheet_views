@@ -1,26 +1,51 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 
 <head>
   <meta charset="UTF-8">
-  <title>appsheet api</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-  <h1>Visualización de Datos</h1>
-  <div>
-    <p>Nombre: <span id="nombre"></span></p>
-    <p>Edad: <span id="correo"></span></p>
-    <p>Otro: <span id="actualizado"></span></p>
+
+  <svg viewBox="0 0 900 100" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+    <rect width="900" height="36.6" fill="#333" />
+    <path d="M0 36.6H450.3L385.98 93.675H0V36.6Z" fill="#ceb656" />
+    <path d="M900 30.6 L850 36.6 L900 93.675 Z" fill="#333" />
+  </svg>
+
+  <!-- ------------------------------------- -->
+
+  <header>
+
+  </header>
+  <div class="datos">
+    <h1>DATOS DE APPSHEET</h1>
+    <br>
+    <div>
+      <p>Nombre: <span id="nombre"></span></p>
+      <p>Edad: <span id="correo"></span></p>
+      <p>Otro: <span id="actualizado"></span></p>
+    </div>
+
+    <script>
+      const params = new URLSearchParams(window.location.search);
+      document.getElementById("nombre").textContent = params.get("nombre");
+      document.getElementById("correo").textContent = params.get("correo");
+      document.getElementById("actualizado").textContent = params.get("actualizado");
+    </script>
   </div>
 
-  <script>
-    const params = new URLSearchParams(window.location.search);
-    document.getElementById("nombre").textContent = params.get("nombre");
-    document.getElementById("correo").textContent = params.get("correo");
-    document.getElementById("actualizado").textContent = params.get("actualizado");
-  </script>
+  <!-- ------------------------------------- -->
+
+  <svg viewBox="0 356.325 900 100" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+    <rect y="413.4" width="900" height="36.6" fill="#333" />
+    <path d="M900 413.4H449.7L514.02 356.325H900V413.4Z" fill="#ceb656" />
+    <path d="M0 416.4 L50 413.4 L0 356.325 Z" fill="#333" />
+  </svg>
+
 </body>
 
 </html>
