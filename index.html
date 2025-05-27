@@ -25,6 +25,7 @@
     <h1>DATOS DE APPSHEET</h1>
     <br>
     <div>
+      <p>Imagen: <span id="imagen"></span></p>
       <p>Nombre: <span id="nombre"></span></p>
       <p>Edad: <span id="correo"></span></p>
       <p>Otro: <span id="actualizado"></span></p>
@@ -32,6 +33,7 @@
 
     <script>
       const params = new URLSearchParams(window.location.search);
+      document.getElementById("imagen").textContent = params.get("imagen");
       document.getElementById("nombre").textContent = params.get("nombre");
       document.getElementById("correo").textContent = params.get("correo");
       document.getElementById("actualizado").textContent = params.get("actualizado");
