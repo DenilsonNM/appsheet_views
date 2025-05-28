@@ -24,6 +24,7 @@ body {
   -webkit-font-smoothing: antialiased;
   max-width: 800px;
   margin: auto;
+  height: 100%;
 }
 
 button {
@@ -40,4 +41,13 @@ svg {
 
 .datos {
   padding: 50px;
+}
+
+.svgbottom {
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 800px;
+  height: auto;
 }
